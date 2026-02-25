@@ -1,10 +1,8 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { InfraModule } from './infra/infra.module';
+import { CrawlerApiModule } from './crawler/api/crawler-api.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [InfraModule, CrawlerApiModule],
 })
 export class AppModule {}

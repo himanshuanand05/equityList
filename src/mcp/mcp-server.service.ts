@@ -4,7 +4,7 @@ import {
   McpServer,
   type CallToolResult,
   ResourceTemplate,
-} from '@modelcontextprotocol/sdk/server/mcp.js';
+} from '@modelcontextprotocol/sdk/server/mcp.ts';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import { z } from 'zod';
 import { Repository } from 'typeorm';

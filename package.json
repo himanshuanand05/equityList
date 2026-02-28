@@ -15,6 +15,9 @@
     "start:scheduler": "node dist/scheduler.main",
     "start:worker": "node dist/worker.main",
     "start:mcp": "node dist/mcp.main",
+    "start:scheduler:dev": "ts-node -r tsconfig-paths/register src/scheduler.main.ts",
+    "start:worker:dev": "ts-node -r tsconfig-paths/register src/worker.main.ts",
+    "start:mcp:dev": "ts-node -r tsconfig-paths/register src/mcp.main.ts",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
@@ -25,6 +28,7 @@
   "dependencies": {
     "@nestjs/common": "^11.0.1",
     "@nestjs/core": "^11.0.1",
+    "@nestjs/swagger": "^11.0.0",
     "@nestjs/platform-express": "^11.0.1",
     "@nestjs/typeorm": "^11.0.0",
     "amqplib": "^0.10.9",
